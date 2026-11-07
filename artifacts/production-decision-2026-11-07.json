@@ -1,0 +1,66 @@
+{
+  "observation_id": "polymarket-us-2026-11-07-20261107193056035",
+  "captured_at_utc": "2026-11-07T19:30:57.339Z",
+  "event_day": "2026-11-07",
+  "venue": "polymarket_us",
+  "trigger": "scheduled Cloudflare Cron",
+  "cron": "*/15 * * * *",
+  "source_set_complete": true,
+  "paper_decision": "NO_TRADE",
+  "trade_ready": false,
+  "candidate_count": 0,
+  "rejected_markets": 13,
+  "rejection_reasons": {
+    "NO_POSITIVE_NET_VALUE_AFTER_ASK_AND_MODELED_FEE": 11,
+    "FRESH_SPORTSBOOK_CONSENSUS_MISSING": 2
+  },
+  "independent_replay": {
+    "result": "exact match",
+    "candidate_count": 0,
+    "rejection_map_matches_saved_observation": true,
+    "evaluator": "production-matched single-venue value evaluator at source revision 4603b1b5a45ae09c1188b0dca288bdb195babe97",
+    "unchanged_gates": {
+      "minimum_bookmakers": 3,
+      "max_odds_age_ms": 900000,
+      "max_book_age_ms": 60000,
+      "max_odds_dispersion": 0.18,
+      "min_net_edge_usd": 0.03,
+      "paper_shares": 1,
+      "max_candidates": 5
+    }
+  },
+  "odds_diagnostics": {
+    "moneyline_markets_evaluated": 13,
+    "markets_with_exact_same_date_sportsbook_match": 11,
+    "missing_exact_matchups": [
+      ["Seokhyeon Ko", "Wellington Turman"],
+      ["Gabriel Lorenco", "Thomas Petersen"]
+    ],
+    "exact_same_date_odds_rows_for_each_missing_matchup": 0
+  },
+  "card_coverage": {
+    "official_active_bouts": 14,
+    "matched_active_markets_with_books": 13,
+    "unmatched_active_bout": ["Carlos Calderon", "Austin Bashi"],
+    "note": "This is reported as a coverage gap; no market is synthesized for the bout."
+  },
+  "paper_wallet": {
+    "scope": "shared strategy virtual wallet per event; not user-scoped",
+    "external_wallet_connected": false,
+    "live_orders_enabled": false,
+    "starting_balance_usd": 100.0,
+    "cash_balance_usd": 100.0,
+    "open_exposure_usd": 0.0,
+    "max_exposure_usd": 5.0,
+    "open_trades": 0,
+    "realized_pnl_usd": 0.0,
+    "pnl_interpretation": "No trades were opened; zero realized P&L is not evidence of a profitable strategy."
+  },
+  "telegram_receipt": {
+    "status": "SENT",
+    "sent_at_utc": "2026-11-07T17:16:04.586Z",
+    "observation_id": "polymarket-us-2026-11-07-20261107171556035",
+    "current_1930_observation_sent": false,
+    "interpretation": "The receipt available at review time proves the earlier 17:15 UTC report only; it does not prove a 19:30 UTC delivery."
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "run_date": "2026-11-07",
+  "source": {
+    "url": "https://www.ufc.com/news/updates-ufc-fight-night-cortes-acosta-vs-walker",
+    "published_at": "2026-11-04",
+    "input_text_sha256": "5ba4bedd8ab871958e8bf0a9f5ac251a58dbfddd05c6ab6c1354d59eb8d91b2b",
+    "future_outcome_data_used": false
+  },
+  "superlinked": {
+    "integration": "hosted SIE entity extraction",
+    "request_method": "official JavaScript SDK",
+    "result": "success",
+    "endpoint_host": "api.superlinked.com",
+    "model": "urchade/gliner_multi-v2.1",
+    "latency_ms": 1142,
+    "expected_person_entities_found": 3,
+    "all_person_spans_match_input": true,
+    "entities": [
+      {"text": "Lucas Brennan", "label": "PERSON", "confidence": 0.991211, "span": [15, 28]},
+      {"text": "Austin Bashi", "label": "PERSON", "confidence": 0.959961, "span": [79, 91]},
+      {"text": "Carlos Calderon", "label": "PERSON", "confidence": 0.977539, "span": [119, 134]}
+    ]
+  },
+  "cognee_cloud": {
+    "integration": "authenticated private Cognee Cloud memory",
+    "tenant": "private; identifier and URL omitted",
+    "dataset": "fightroom_hackathon_20261107",
+    "remember": {"http_status": 200, "pipeline_status": "completed", "items_processed": 1, "latency_ms": 18982, "response_sha256": "a7d2368db4d9e3ff3b5d334000c4caf5a349de1126786e10bff7f3937fc799bf"},
+    "analyst_recall": {"http_status": 200, "latency_ms": 900, "response_sha256": "857a6f753ae84f4c51d0b1104019463eb37bd7a05e53c1feefcb0bcc1e36a21d", "recovered_source_date_and_roster_correction": true},
+    "independent_verifier_recall": {"http_status": 200, "latency_ms": 580, "response_sha256": "857a6f753ae84f4c51d0b1104019463eb37bd7a05e53c1feefcb0bcc1e36a21d", "recovered_source_date_and_roster_correction": true},
+    "future_outcome_data_used": false
+  },
+  "tinfoil": {
+    "integration": "attested LLM inference",
+    "result": "success",
+    "model": "llama3-3-70b",
+    "latency_ms": 5955,
+    "response": "Carlos Calderon will replace Lucas Brennan as the opponent for Austin Bashi at the November 7 UFC Fight Night.",
+    "attestation": {
+      "verified": true,
+      "verified_at": "2026-11-07T19:17:15.012948Z",
+      "verifier": "tinfoil",
+      "sdk_version": "0.15.0",
+      "release_digest": "95e49018369d59594468ed5af698631ba011937d3859fcbad21207eb0b0f9007",
+      "code_fingerprint": "bcfaff463b2f9a8ab07975439941bf4f39eebd7d5f882f6322bf3c65b89dab84",
+      "enclave_fingerprint": "f5bcc220a94d5c34c5c80db9593dcc88d7d1a19b43796c05ec4b6cdcf921c8176a56cb3d0224650b1250ee892a0ec438"
+    },
+    "inference_scope": "source-grounded roster memo; no probability, odds, result, or trade recommendation"
+  }
+}

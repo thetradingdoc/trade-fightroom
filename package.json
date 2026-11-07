@@ -1,0 +1,15 @@
+{
+  "name": "trade-fightroom",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Clean-room source-grounded MMA research evidence demo",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "verify": "node scripts/verify-evidence.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

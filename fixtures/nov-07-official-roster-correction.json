@@ -1,0 +1,14 @@
+{
+  "fixture_id": "ufc-fight-night-2026-11-07-roster-correction",
+  "source": "https://www.ufc.com/news/updates-ufc-fight-night-cortes-acosta-vs-walker",
+  "source_published_at": "2026-11-04",
+  "input_text_sha256": "5ba4bedd8ab871958e8bf0a9f5ac251a58dbfddd05c6ab6c1354d59eb8d91b2b",
+  "fact": "Carlos Calderon replaced Lucas Brennan as Austin Bashi's opponent for the November 7 UFC Fight Night.",
+  "entities": [
+    {"text": "Lucas Brennan", "label": "PERSON", "confidence": 0.991211, "span": [15, 28], "span_verified": true},
+    {"text": "featherweight bout", "label": "EVENT", "confidence": 0.701172, "span": [55, 73], "span_verified": true},
+    {"text": "Austin Bashi", "label": "PERSON", "confidence": 0.959961, "span": [79, 91], "span_verified": true},
+    {"text": "Carlos Calderon", "label": "PERSON", "confidence": 0.977539, "span": [119, 134], "span_verified": true}
+  ],
+  "expected_person_entities": ["Lucas Brennan", "Austin Bashi", "Carlos Calderon"]
+}
